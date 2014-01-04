@@ -14,6 +14,7 @@ http://rubypond.com/articles/2008/07/16/sexy-forms-in-rails/
 ```term
 $ script/plugin install git://github.com/rubypond/semantic-form-builder.git
 $ rake semantic_form_builder:setup # (if the installation script didn't move the semantic_form.css into /public/stylesheets/)
+```
 
 1. If you wish to use the builder to replace the default for all forms (which is great for consistency) then add the following into an initializer `ActionView::Base.default_form_builder = SemanticFormBuilder`. Otherwise pass the builder in as the `:builder` parameter for `form_for`.
 2. Be sure to include `semantic_forms.css` in your layout
